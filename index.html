@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dominion Outreach</title>
   <link rel="stylesheet" href="style.css">
+   <script src="script.js" defer></script>
+
 </head>
 
 <body>
@@ -231,7 +233,72 @@
     </div>
   </div>
 
-  <section id="faqs" class="faq-section" a href="#faqs">
+  <section id="faqs" class="faq-section">
+  <div class="faq-intro">
+    <small>Something's not clear?</small>
+    <h2>Frequently Asked Questions</h2>
+    <p>Find answers to what you do not quite understand in our Program.</p>
+    <div class="faqs-image">
+      <img src="images/FAQs.png">
+    </div>
+  </div>
+
+  <div class="faq-items">
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>Is the programme flexible to accomodate children as well?</span>
+        <button class="faq-toggle">+</button>
+      </div>
+      <div class="faq-answer">
+        <p><strong>YES</strong> We have programmes for children. This can be acessed when we shall link you to your
+          mentors based on the answers you would have provided us with.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>Are online sessions available?</span>
+        <button class="faq-toggle">+</button>
+      </div>
+      <div class="faq-answer">
+        <p><strong>DEFINITELY</strong> We highly prioritise your Spiritual well being. Meaning, you can have a session
+          while at work, commuting, or even from the very comfort of your home.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">
+          <span>Will I be charged for a session or resource <br />at any point once I start?</span>
+          <button class="faq-toggle">+</button>
+        </div>
+        <div class="faq-answer">
+          <p><strong>NO</strong>If you shall be asked to pay so as to attend a session or even get a resource, you are
+            encouraged to contact us via our contacts and report.</p>
+        </div>
+      </div>
+    <div class="faq-item">
+        <div class="faq-question">
+          <span>How long does the program take?</span>
+          <button class="faq-toggle">+</button>
+        </div>
+      <div class="faq-answer">
+        <p><strong>IT IS A LIFETIME COMMITMENT</strong>We do not have a specific time frame for this program. It is a
+          lifetime commitment to grow in the knowledge of God and to be transformed by the renewing of your mind.</p>
+      </div>
+      </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>How can I become a Mentor?</span>
+        <button class="faq-toggle">+</button>
+      </div>
+      <div class="faq-answer">
+        <p>To be a mentor in the Dominion Outreach, one has to complete the whole Program, thereafter, an application
+          form will ne sent for you to fill.</p>
+      </div>
+    </div>
+  </div>
+</section>
+  <!--<section id="faqs" class="faq-section" a href="#faqs">
     <div class="faq-intro">
       <small>Something's not clear?</small>
       <h2>Frequently Asked Questions</h2>
@@ -273,20 +340,21 @@
           <p>To be a mentor in the Dominion Outreach, one has to complete the whole Program, thereafter, an application
             form will ne sent for you to fill.</p>
         </div>
-      </div>
+      </div>-->
 
-
-
-      <div class="faq-item">
+      <!--<div class="faq-item">
         <div class="faq-question">
-          <span>Will I be charged for a session or resource <br />at any point once I start?</span>
-          <button class="faq-toggle">+</button>
-        </div>
-        <div class="faq-answer">
-          <p><strong>NO</strong>If you shall be asked to pay so as to attend a session or even get a resource, you are
-            encouraged to contact us via our contacts and report.</p>
-        </div>
+          <span>How long does the program take?</span>
+          <button class="faq-toggle>+</button>
+        
+      <div class="faq-answer">
+        <p><strong>IT IS A LIFETIME COMMITMENT</strong>We do not have a specific time frame for this program. It is a
+          lifetime commitment to grow in the knowledge of God and to be transformed by the renewing of your mind.</p>
       </div>
+      </div>-->
+        
+
+      
 
 
     </div>
@@ -360,6 +428,33 @@
         </div>
 
         <div class="contact-form">
+  <h2>Send Us a Message</h2>
+  <form id="contactForm">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Email" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Send us your Message" required></textarea>
+    
+    <button type="submit" class="submit-btn">Send Message</button>
+  </form>
+</div>
+
+<!-- Notification Popup -->
+<div class="notification-popup" id="notification">
+  <div class="popup-content">
+    <div class="popup-icon">
+      <svg viewBox="0 0 24 24">
+        <path fill="currentColor" d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z" />
+      </svg>
+    </div>
+    <h3>Message Sent!</h3>
+    <p>Thank you for contacting us. We'll get back to you soon.</p>
+    <button class="popup-ok-btn" id="closeNotification">OK</button>
+  </div>
+</div>
+    </div>
+       <!-- <div class="contact-form">
           <h2>Send Us a Message</h2>
           <form>
             <label for="email">Email</label>
@@ -370,8 +465,21 @@
             <button onclick="alert" >Send Message</button>
             <!--<textarea id="me"></textarea>-->
 
-        </div>
+        <!--</div>
+        <!-- Notification Popup -->
+<!--<div class="notification-popup" id="notification">
+  <div class="popup-content">
+    <div class="popup-icon">
+      <svg viewBox="0 0 24 24">
+        <path fill="currentColor" d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z" />
+      </svg>
     </div>
+    <h3>Message Sent!</h3>
+    <p>Thank you for contacting us. We'll get back to you soon.</p>
+    <button class="popup-ok-btn" id="closeNotification">OK</button>
+  </div>
+</div>
+    </div>-->
     <div class="container-footer">
       <footer class="footer">
         <div class="footer-content">
@@ -422,8 +530,29 @@
       </div>
     </div>
 
-    <script src="script.js">
-      
-</script>
+    <script src="">
+      document.addEventListener('DOMContentLoaded', function() {
+  const faqItems = document.querySelectorAll('.faq-item');
+  
+  faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+    const toggleBtn = item.querySelector('.faq-toggle');
+    const answer = item.querySelector('.faq-answer');
+    
+    // Toggle answer when clicking the question
+    question.addEventListener('click', () => {
+      answer.classList.toggle('show');
+      toggleBtn.textContent = answer.classList.contains('show') ? '-' : '+';
+    });
+    
+    // Toggle answer when clicking the button (prevent double trigger)
+    toggleBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      answer.classList.toggle('show');
+      toggleBtn.textContent = answer.classList.contains('show') ? '-' : '+';
+    });
+  });
+});
+    </script>
 </body>
 </html>
