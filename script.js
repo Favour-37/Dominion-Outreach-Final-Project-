@@ -132,3 +132,31 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
+
+    //hamburger
+    const hamburger = document.getElementById('hamburger');
+        const navContainer = document.getElementById('navContainer');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navContainer.classList.toggle('active');
+        });
+
+        // Close menu when clicking on links (mobile)
+        document.querySelectorAll('.nav-container a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 768) {
+                    hamburger.classList.remove('active');
+                    navContainer.classList.remove('active');
+                }
+            });
+        });
+
+        // Reset menu when resizing to desktop
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                hamburger.classList.remove('active');
+                navContainer.classList.remove('active');
+            }
+        });
+        
