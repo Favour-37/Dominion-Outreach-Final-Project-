@@ -454,7 +454,7 @@ a {
   align-items: center;
   justify-content: center;
   padding: 0 15px; /* Added padding for better spacing */
-  transition: all 0.3s ease; /* Smooth transition for hover 
+ /* transition: all 0.3s ease; /* Smooth transition for hover 
 }
 
 .slide img {
@@ -462,7 +462,7 @@ a {
   width: auto;
   object-fit: contain;
   filter: grayscale(30%); /* Makes logos slightly muted by default */
-  transition: all 0.3s ease; /* Smooth transition for hover 
+  /*transition: all 0.3s ease; /* Smooth transition for hover 
   border-radius: 8px; /* Smoother edges 
   padding: 8px; /* Creates space around logos 
   background: rgba(255, 255, 255, 0.7); /* Light background for logos 
@@ -487,7 +487,7 @@ a {
 /* Pause animation on hover 
 .logo-slider:hover .slide-track {
  /* animation-play-state: paused;*/
-}
+
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
@@ -549,9 +549,7 @@ a {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
-  .logo-slider:hover .slide-track {
- /* animation-play-state: paused;*/
-}
+
 
 
 /* ==================== */
